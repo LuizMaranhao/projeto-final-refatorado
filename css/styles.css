@@ -1,0 +1,104 @@
+/* Importa a fonte do Google para um visual de sistema profissional */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Reset para garantir que o site ignore as margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que as bordas não "empurrem" os elementos */
+    font-family: 'Inter', sans-serif; /* Aplica a fonte em tudo */
+}
+
+/* Estilização do fundo da página */
+body {
+    background-color: #f4f7f6; /* Um cinza bem suave para não cansar a vista */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo no meio da tela */
+    min-height: 100vh; /* Garante que o fundo cubra a tela toda */
+    padding-top: 40px;
+}
+
+/* Estilo do Container (O cartão branco onde fica o formulário) */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px; /* Bordas arredondadas modernas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra elegante */
+    width: 90%;
+    max-width: 600px; /* Limita a largura para não esticar demais no PC */
+}
+
+/* Título do projeto */
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Estilo do Formulário */
+form {
+    display: grid; /* Usa grid para organizar os campos */
+    gap: 15px; /* Espaço entre cada item do formulário */
+}
+
+/* Estilo dos Inputs (Nome e E-mail) */
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s; /* Suaviza a troca de cor ao clicar */
+}
+
+/* Quando você clica no campo (Focus) */
+input:focus {
+    border-color: #4A90E2; /* Borda fica azul */
+    outline: none; /* Remove aquela linha preta padrão do navegador */
+}
+
+/* Botão de Cadastrar */
+button {
+    background-color: #4A90E2; /* Azul profissional */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: #357ABD; /* Escurece o azul */
+}
+
+/* Estilo da Tabela de Resultados */
+table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse; /* Cola as bordas das células */
+}
+
+/* Cabeçalho da Tabela */
+th {
+    text-align: left;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #eee;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Linhas da Tabela */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+
+/* Destaque para quando a tabela está vazia ou sendo preenchida */
+tr:hover {
+    background-color: #fafafa;
+}
